@@ -1,7 +1,8 @@
-tile.advancedkinetics_cautionBlock.name=Caution Block
+tile.advancedkinetics_cautionBlock.name=Standardised Chromatic Hazard Indicator
+tile.advancedkinetics_cautionLightBlock.name=Standardised Luminescent Chromatic Hazard Indicator
 
 tile.advancedkinetics_basicFieldBlock.name=Basic Field Core
-tile.advancedkinetics_targetingFieldBlock.name=TargetingFieldCore
+tile.advancedkinetics_targetingFieldBlock.name=Targeting Field Core
 
 tile.advancedkinetics_BlockEffectBurn.name=Field Effect: Burn
 tile.advancedkinetics_BlockEffectAccelerate.name=Field Effect: Accelerate

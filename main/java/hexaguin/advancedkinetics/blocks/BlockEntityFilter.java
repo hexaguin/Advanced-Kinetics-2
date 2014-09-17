@@ -13,9 +13,19 @@ public class BlockEntityFilter extends Block {
 	public BlockEntityFilter(String type){
 		super(Material.iron);
 		this.setBlockName(Constants.MODID + "_" + "BlockEntityFilter"+type);
+		this.setBlockTextureName(Constants.MODID + ":BlockFilter" + type);
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		GameRegistry.registerBlock(this, "BlockEntityFilter"+type);
 		this.blockedType = type; 
+		this.setHardness((float)3);
+		this.setHarvestLevel("pickaxe", 0);
+		this.lightValue = 5;
+		this.lightOpacity = 1;
+	}
+	
+	@Override
+	public boolean isOpaqueCube(){
+		return false;
 	}
 	
 }

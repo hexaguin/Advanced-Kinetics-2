@@ -6,13 +6,14 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class BlockCaution extends Block {
-	public BlockCaution(){
+public class BlockCautionLight extends Block {
+	public BlockCautionLight(){
 		super(Material.cloth);
-		this.setBlockName(Constants.MODID + "_" + "cautionBlock");
+		this.setBlockName(Constants.MODID + "_" + "cautionLightBlock");
 		this.setCreativeTab(CreativeTabs.tabBlock);
-		GameRegistry.registerBlock(this, "cautionBlock");
-		this.setBlockTextureName(Constants.MODID + ":BlockCaution");
+		GameRegistry.registerBlock(this, "cautionLightBlock");
+		this.setBlockTextureName(Constants.MODID + ":BlockCautionLight");
 		this.setHardness((float)0.8);
+		this.lightValue=15;
 	}
 }
