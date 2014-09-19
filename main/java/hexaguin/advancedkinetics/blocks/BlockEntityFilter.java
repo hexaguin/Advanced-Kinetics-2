@@ -1,5 +1,6 @@
 package hexaguin.advancedkinetics.blocks;
 
+import hexaguin.advancedkinetics.AdvancedKinetics;
 import hexaguin.advancedkinetics.lib.Constants;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -14,7 +15,7 @@ public class BlockEntityFilter extends Block {
 		super(Material.iron);
 		this.setBlockName(Constants.MODID + "_" + "BlockEntityFilter"+type);
 		this.setBlockTextureName(Constants.MODID + ":BlockFilter" + type);
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(AdvancedKinetics.tabAdvancedKinetics);
 		GameRegistry.registerBlock(this, "BlockEntityFilter"+type);
 		this.blockedType = type; 
 		this.setHardness((float)3);

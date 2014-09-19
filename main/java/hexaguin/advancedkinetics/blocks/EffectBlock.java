@@ -1,5 +1,6 @@
 package hexaguin.advancedkinetics.blocks;
 
+import hexaguin.advancedkinetics.AdvancedKinetics;
 import hexaguin.advancedkinetics.lib.Constants;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -14,7 +15,7 @@ public class EffectBlock extends Block {
 		this.setBlockTextureName(Constants.MODID + ":" + name());
 		this.lightValue = 5;
 		this.lightOpacity = 1;
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(AdvancedKinetics.tabAdvancedKinetics);
 		this.setHardness((float)3);
 		this.setHarvestLevel("pickaxe", 0);
 		GameRegistry.registerBlock(this, name());

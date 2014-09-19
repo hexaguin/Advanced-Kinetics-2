@@ -1,6 +1,7 @@
 package hexaguin.advancedkinetics.blocks;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import hexaguin.advancedkinetics.AdvancedKinetics;
 import hexaguin.advancedkinetics.lib.Constants;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -10,7 +11,7 @@ public class BlockCautionLight extends Block {
 	public BlockCautionLight(){
 		super(Material.cloth);
 		this.setBlockName(Constants.MODID + "_" + "cautionLightBlock");
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(AdvancedKinetics.tabAdvancedKinetics);
 		GameRegistry.registerBlock(this, "cautionLightBlock");
 		this.setBlockTextureName(Constants.MODID + ":BlockCautionLight");
 		this.setHardness((float)0.8);

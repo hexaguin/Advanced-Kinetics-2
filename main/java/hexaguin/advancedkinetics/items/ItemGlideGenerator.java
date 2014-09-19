@@ -1,5 +1,6 @@
 package hexaguin.advancedkinetics.items;
 
+import hexaguin.advancedkinetics.AdvancedKinetics;
 import hexaguin.advancedkinetics.lib.Constants;
 
 import java.util.Iterator;
@@ -32,7 +33,7 @@ public class ItemGlideGenerator extends Item{
 		this.setHasSubtypes(true);
 		this.setMaxDamage(0);
 		this.setUnlocalizedName(Constants.MODID + "_" + "glideGenerator");
-		setCreativeTab(CreativeTabs.tabTools);
+		setCreativeTab(AdvancedKinetics.tabAdvancedKinetics);
 		GameRegistry.registerItem(this, "glideGeneratorItem");
 	}
 	

@@ -1,6 +1,7 @@
 package hexaguin.advancedkinetics.blocks;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import hexaguin.advancedkinetics.AdvancedKinetics;
 import hexaguin.advancedkinetics.lib.Constants;
 import hexaguin.advancedkinetics.tileentities.TileEntityBasicField;
 import hexaguin.advancedkinetics.tileentities.TileEntityTargetingField;
@@ -16,7 +17,7 @@ public class BlockTargetingField extends BlockContainer {
 		super(Material.iron);
 		this.setBlockName(Constants.MODID + "_" + "targetingFieldBlock");
 		this.setBlockTextureName(Constants.MODID + ":" + "BlockTargetingField");
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(AdvancedKinetics.tabAdvancedKinetics);
 		GameRegistry.registerBlock(this, "targetingFieldBlock");
 		this.setHardness((float)3);
 		this.setHarvestLevel("pickaxe", 0);

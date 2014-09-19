@@ -1,5 +1,6 @@
 package hexaguin.advancedkinetics.blocks;
 
+import hexaguin.advancedkinetics.AdvancedKinetics;
 import hexaguin.advancedkinetics.lib.Constants;
 import hexaguin.advancedkinetics.tileentities.TileEntityBasicField;
 import net.minecraft.block.BlockContainer;
@@ -13,12 +14,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class BlockBasicField extends BlockContainer {
 	public BlockBasicField(){
-		super(Material.cloth);
+		super(Material.iron);
 		this.setBlockName(Constants.MODID + "_" + "basicFieldBlock");
 		this.setBlockTextureName(Constants.MODID + ":" + "BlockBasicField");
 		this.lightValue = 15;
 		this.lightOpacity = 1;
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(AdvancedKinetics.tabAdvancedKinetics);
 		GameRegistry.registerBlock(this, "basicFieldBlock");
 		this.setHardness((float)3);
 		this.setHarvestLevel("pickaxe", 0);
