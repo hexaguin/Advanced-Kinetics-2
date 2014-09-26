@@ -26,6 +26,7 @@ public final class AKBlocks {
 	public static Block burnEffectBlock;
 	public static Block bounceEffectBlock;
 	public static Block targetingFieldBlock;
+	public static Block swingEffectBlock;
 	
 	public static void init(){ //TODO: Add my own tab
 		cautionBlock = new BlockCaution();
@@ -39,6 +40,7 @@ public final class AKBlocks {
 		bounceEffectBlock = new BlockEffectBounce();
 		accelerateEffectBlock = new BlockEffectAccelerate();
 		slowEffectBlock = new BlockEffectSlow();
+		swingEffectBlock = new BlockEffectSwing();
 		
 		livingFilterBlock = new BlockEntityFilter("Living");
 		nonLivingFilterBlock = new BlockEntityFilter("NonLiving");
